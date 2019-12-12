@@ -5,7 +5,7 @@ The raw official released QQP dataset contains total 404301 pairs of questions o
 
 I did some analysis about the dataset, and found some typos.
 
-   | total number | paraphrases | none-paraphrases  
+ |   | total number | paraphrases | none-paraphrases  
 -|-|-|-|
 raw dataset | 404301 | 149263 | 255038
 
