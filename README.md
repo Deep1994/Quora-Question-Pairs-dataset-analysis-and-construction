@@ -7,7 +7,7 @@ I did some analysis about the dataset, and found some typos.
 
  |   | total number | paraphrases | none-paraphrases  
 -|-|-|-|
-raw dataset | 404301 | 149263 | 255038
+Raw dataset | 404301 | 149263 | 255038
 
 The number of paraphrases is correct, but the number of none-paraphrases is wrong. There are 11 pairs have wrong data format that do not split correctly witht "\t", all the wrong pairs ids are as follws:
 
@@ -23,9 +23,26 @@ The number of paraphrases is correct, but the number of none-paraphrases is wron
 283933	
 364931
 
-All of these pairs are none-paraphrases. After correct them, we accutually have $404301 - 11 = 404290$ pairs of questions.
+All of these pairs are none-paraphrases. After correct them, we accutually have 404301 - 11 = 404290 pairs of questions.
 
  |   | total number | paraphrases | none-paraphrases  
 -|-|-|-|
-QQP dataset | 404290 | 149263 | 255027
+Corrected dataset | 404290 | 149263 | 255027
 
+## File description
+
++ data_analysis.py
+
+Do the analysis and correct the raw dataset.
+
++ data_preprocess.py
+
+Some preprocess for QQP dataset.
+
++ dataset.py
+
+Get the train/dev/test set according to the raw dataset. Rondom 5000 paraphrases and 5000 none-paraphrases for dev, same as the test set, so dev set and test set contain 10000 pairs of questions, respectively. All the rest are considered as the train set.
+
+ |   | total number | train | dev | test  
+-|-|-|-|-|
+Splited dataset | 404290 | 384290 | 10000 | 10000
