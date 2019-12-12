@@ -23,4 +23,9 @@ The number of paraphrases is correct, but the number of none-paraphrases is wron
 283933	
 364931
 
+All of these pairs are none-paraphrases. After correct them, we accutually have $404301 - 11 = 404290$ pairs of questions.
+
+ |   | total number | paraphrases | none-paraphrases  
+-|-|-|-|
+QQP dataset | 404290 | 149263 | 255027
 
