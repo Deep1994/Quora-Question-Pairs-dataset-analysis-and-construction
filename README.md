@@ -9,7 +9,7 @@ I did some analysis about the dataset, and found some typos.
 -|-|-|-|
 Raw dataset | 404301 | 149263 | 255038
 
-The number of paraphrases is correct, but the number of none-paraphrases is wrong. There are 11 pairs have wrong data format that do not split correctly witht "\t", all the wrong pairs ids are as follws:
+The number of paraphrases is correct, but the number of none-paraphrases is wrong. There are 11 pairs have wrong data format that do not split correctly witht "\t", all the wrong pairs ids are as follows:
 
 2332	
 12330
